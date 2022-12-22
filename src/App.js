@@ -3,7 +3,7 @@ import React, { Suspense, useState } from 'react';
 import { lazy } from 'react';
 import { Routes , Route } from "react-router-dom";
 import Loading from "./components/Loading";
-import ShowPanel from './components/ShowPanel';
+import Home from "./components/Home";
 import WhatDayIsToday from "./components/WhatDayIsToday";
 
 
@@ -13,9 +13,8 @@ function App() {
 
     <>
       <Routes>
-        <Route path='/' element={<ShowPanel />} />
+        <Route path='/' element={<Home />} />
       </Routes>
-      <WhatDayIsToday className="left-0"/>
     </>
   );
 }
