@@ -10,10 +10,10 @@ export default function WhatDayIsToday() {
       else if (date.getHours() === 12 && date.getMinutes() > 0 || date.getHours() <= 17) {
         message = "Good Evening!";
       }
-      else if (date.getHours() === 17 && date.getMinutes() > 0 || date.getHours() <= 17) {
+      else if (date.getHours() === 17 && date.getMinutes() > 0 || date.getHours() <= 23) {
         message = "Good Evening!";
       }
-      else if (date.getHours() === 23 && date.getMinutes() > 0 || date.getHours() <= 4 && date.getMinutes() >= 59) {
+      else if (date.getHours() === 23 && date.getMinutes() > 0 || date.getHours() <= 4 && date.getMinutes() <= 59) {
         message = "🌙Good Night!";
       }
       else {
